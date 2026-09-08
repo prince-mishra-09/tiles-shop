@@ -1,4 +1,4 @@
-const businessPhone = "918382801930"; // Set to Prince Mishra's number for testing
+const businessPhone = "918898872972"; // KAJARIA DISPLAY CENTRE CHITRAKOOT
 
 const products = [
   {
