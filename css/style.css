@@ -46,6 +46,9 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 body {
@@ -54,6 +57,8 @@ body {
   color: var(--charcoal);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -79,7 +84,7 @@ h4, h5, h6 { font-family: 'DM Sans', sans-serif; }
 
 .section-heading {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(1.75rem, 5vw, 3.2rem);
   font-weight: 500;
   line-height: 1.2;
   color: var(--dark);
@@ -87,7 +92,7 @@ h4, h5, h6 { font-family: 'DM Sans', sans-serif; }
 
 .section-heading-hindi {
   font-family: 'Hind', sans-serif;
-  font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+  font-size: clamp(1.5rem, 5vw, 2.8rem);
   font-weight: 600;
   line-height: 1.25;
   color: var(--dark);
@@ -103,13 +108,17 @@ h4, h5, h6 { font-family: 'DM Sans', sans-serif; }
 
 /* ── Layout ─────────────────────────────────────────── */
 .container {
-  width: min(1280px, 100% - 48px);
+  width: 100%;
+  max-width: 1280px;
   margin-inline: auto;
+  padding-inline: 24px;
 }
 
 .container-wide {
-  width: min(1440px, 100% - 32px);
+  width: 100%;
+  max-width: 1440px;
   margin-inline: auto;
+  padding-inline: 16px;
 }
 
 section { padding: var(--section-gap) 0; }
@@ -1918,12 +1927,13 @@ footer {
 
 @media (max-width: 1024px) {
   :root { --section-gap: 80px; }
+  .container { padding-inline: 20px; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .nav-cta .nav-wa-btn span { display: none; }
   .hide-mobile { display: none; }
   .nav-shortlist-btn { padding: 10px; border-radius: 50%; }
-  .shortlist-count { position: absolute; top: -4px; right: -4px; }
+  .shortlist-count { position: absolute; top: -2px; right: -2px; border: 2px solid var(--dark); }
   .catalogue-layout { grid-template-columns: 1fr; }
   .filters-sidebar { display: none; }
   .mobile-filter-btn { display: flex; }
@@ -1973,9 +1983,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .container { padding-inline: 16px; }
   .nav-logo { font-size: 1.1rem; }
-  .nav-logo span { font-size: 8px; letter-spacing: 0.1em; }
-  .nav-cta { gap: 6px; }
+  .nav-logo span { font-size: 8px; letter-spacing: 0.05em; margin-top: 2px; }
+  .nav-cta { gap: 8px; }
   .nav-wa-btn { padding: 10px; border-radius: 50%; }
   .nav-shortlist-btn { padding: 10px; }
   .hero-h1 { font-size: clamp(1.8rem, 8vw, 3.5rem); }
