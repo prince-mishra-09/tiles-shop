@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kajaria Tiles & Marble | Premium Showroom</title>
+  <meta name="description" content="Discover premium tiles and marble for your home. View our collection of floor tiles, wall tiles, bathroom tiles, and more in realistic room settings.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="transparent">
+    <div class="container-wide nav-inner">
+      <a href="#" class="nav-logo">
+        [SHOWROOM NAME]
+        <span>Premium Tiles & Marble</span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#spaces">Spaces</a>
+        <a href="#catalogue">Collection</a>
+        <a href="#gallery">Inspiration</a>
+        <a href="#showroom">Visit Us</a>
+      </div>
+
+      <div class="nav-cta">
+        <button class="nav-shortlist-btn" onclick="toggleShortlist()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="hide-mobile">मेरी पसंद</span>
+          <span class="shortlist-count" id="nav-shortlist-count">0</span>
+        </button>
+        <a href="#enquiry" class="nav-wa-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          <span>WhatsApp पर पूछें</span>
+        </a>
+        <div class="hamburger" onclick="toggleMobileNav()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#hero" onclick="toggleMobileNav()">Home</a>
+    <a href="#spaces" onclick="toggleMobileNav()">Spaces</a>
+    <a href="#catalogue" onclick="toggleMobileNav()">Collection</a>
+    <a href="#gallery" onclick="toggleMobileNav()">Inspiration</a>
+    <a href="#showroom" onclick="toggleMobileNav()">Visit Us</a>
+    <div class="mobile-nav-cta">
+      <a href="#enquiry" class="btn btn-wa" onclick="toggleMobileNav()">WhatsApp पर पूछें</a>
+      <a href="tel:+910000000000" class="btn btn-outline" onclick="toggleMobileNav()">Call Us</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="images/hero.jpg" alt="Premium Living Room Interior with Luxury Tiles" class="hero-img" id="hero-img">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-eyebrow fade-up fade-up-delay-1">[SHOWROOM NAME]</div>
+      <h1 class="hero-h1 fade-up fade-up-delay-2">हर घर के लिए<br>सही Tile.</h1>
+      <p class="hero-subtitle fade-up fade-up-delay-3">Premium Tiles & Marble का शानदार collection — जहाँ design, quality और style एक साथ मिलते हैं.</p>
+      
+      <div class="hero-actions fade-up fade-up-delay-4">
+        <a href="#catalogue" class="btn btn-gold">Collection देखें</a>
+        <a href="#enquiry" class="btn btn-outline">WhatsApp पर पूछें</a>
+      </div>
+      <p class="hero-note fade-up fade-up-delay-4">अपने पसंदीदा tiles को देखें, compare करें और enquiry भेजें.</p>
+    </div>
+
+    <div class="scroll-indicator">
+      Scroll to explore
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- Categories (Spaces) -->
+  <section id="spaces">
+    <div class="container">
+      <div class="section-header centered fade-up">
+        <div class="section-label">Shop By Space</div>
+        <h2 class="section-heading-hindi">अपनी जगह के लिए सही Tile खोजें</h2>
+        <p class="section-sub">जिस जगह पर tile लगनी है, उसके अनुसार selection बदलता है. अपने room के हिसाब से सही tile चुनें.</p>
+      </div>
+
+      <div class="spaces-grid">
+        <div class="space-card wide fade-up">
+          <img src="images/space_bedroom.jpg" alt="Bedroom Tiles" class="space-img" loading="lazy">
+          <div class="space-overlay">
+            <h3 class="space-name">Bedroom</h3>
+            <span class="space-tag">Warm & Relaxing</span>
+            <span class="space-arrow">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="space-card fade-up">
+          <img src="images/space_kitchen.jpg" alt="Kitchen Tiles" class="space-img" loading="lazy">
+          <div class="space-overlay">
+            <h3 class="space-name">Kitchen</h3>
+            <span class="space-tag">Easy Clean</span>
+            <span class="space-arrow">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="space-card fade-up">
+          <img src="images/space_bathroom.jpg" alt="Bathroom Tiles" class="space-img" loading="lazy">
+          <div class="space-overlay">
+            <h3 class="space-name">Bathroom</h3>
+            <span class="space-tag">Anti-Skid</span>
+            <span class="space-arrow">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="space-card fade-up">
+          <img src="images/space_elevation.jpg" alt="Elevation Tiles" class="space-img" loading="lazy">
+          <div class="space-overlay">
+            <h3 class="space-name">Elevation</h3>
+            <span class="space-tag">Exterior Wall</span>
+            <span class="space-arrow">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="space-card wide fade-up">
+          <img src="images/hero.jpg" alt="Living Room Tiles" class="space-img" loading="lazy" style="object-position: bottom;">
+          <div class="space-overlay">
+            <h3 class="space-name">Living Room</h3>
+            <span class="space-tag">Luxury Floor</span>
+            <span class="space-arrow">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="space-card fade-up">
+          <img src="images/space_balcony.jpg" alt="Balcony Tiles" class="space-img" loading="lazy">
+          <div class="space-overlay">
+            <h3 class="space-name">Balcony</h3>
+            <span class="space-tag">Outdoor</span>
+            <span class="space-arrow">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tile Types -->
+  <section id="tile-types">
+    <div class="container-wide">
+      <div class="section-header fade-up">
+        <div class="section-label">Tile Types</div>
+        <h2 class="section-heading">Explore Our Collections</h2>
+      </div>
+
+      <div class="tile-types-rail fade-up">
+        <div class="tile-type-card" onclick="setFilter('category', 'Floor Tiles')">
+          <img src="images/hero.jpg" alt="Floor Tiles" class="tile-type-img" loading="lazy">
+          <div class="tile-type-body">
+            <h4 class="tile-type-name">Floor Tiles</h4>
+            <p class="tile-type-desc">Durable, large-format tiles for living spaces.</p>
+            <span class="tile-type-link">View Collection <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="tile-type-card" onclick="setFilter('material', 'Marble Look')">
+          <img src="images/tile_marble.jpg" alt="Marble Look Tiles" class="tile-type-img" loading="lazy">
+          <div class="tile-type-body">
+            <h4 class="tile-type-name">Marble Look</h4>
+            <p class="tile-type-desc">The elegance of natural marble with easy maintenance.</p>
+            <span class="tile-type-link">View Collection <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="tile-type-card" onclick="setFilter('material', 'Wooden Look')">
+          <img src="images/tile_wood.jpg" alt="Wooden Look Tiles" class="tile-type-img" loading="lazy">
+          <div class="tile-type-body">
+            <h4 class="tile-type-name">Wooden Look</h4>
+            <p class="tile-type-desc">Warm timber aesthetics in durable ceramic.</p>
+            <span class="tile-type-link">View Collection <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="tile-type-card" onclick="setFilter('material', 'Stone Look')">
+          <img src="images/tile_stone.jpg" alt="Stone Look Tiles" class="tile-type-img" loading="lazy">
+          <div class="tile-type-body">
+            <h4 class="tile-type-name">Stone Look</h4>
+            <p class="tile-type-desc">Natural textures and earthy tones for organic spaces.</p>
+            <span class="tile-type-link">View Collection <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="tile-type-card" onclick="setFilter('finish', 'Glossy')">
+          <img src="images/tile_glossy.jpg" alt="Glossy Tiles" class="tile-type-img" loading="lazy">
+          <div class="tile-type-body">
+            <h4 class="tile-type-name">Glossy Finish</h4>
+            <p class="tile-type-desc">Highly reflective surfaces to brighten any room.</p>
+            <span class="tile-type-link">View Collection <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+        <div class="tile-type-card" onclick="setFilter('finish', 'Matt')">
+          <img src="images/tile_dark.jpg" alt="Matt Finish Tiles" class="tile-type-img" loading="lazy">
+          <div class="tile-type-body">
+            <h4 class="tile-type-name">Matt Finish</h4>
+            <p class="tile-type-desc">Sophisticated, non-reflective surfaces for modern looks.</p>
+            <span class="tile-type-link">View Collection <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Spaces -->
+  <section id="real-spaces">
+    <div class="container">
+      <div class="section-header centered fade-up">
+        <div class="section-label">Visualize</div>
+        <h2 class="section-heading-hindi">Tile को सिर्फ मत देखिए — उसे अपने Space में महसूस कीजिए.</h2>
+        <p class="section-sub">See how our premium tiles transform ordinary rooms into extraordinary living spaces.</p>
+      </div>
+
+      <div class="spaces-scenario-grid">
+        <div class="scenario-card tall fade-up">
+          <img src="images/space_staircase.jpg" alt="Staircase Tiles" class="scenario-img" loading="lazy">
+          <div class="scenario-overlay">
+            <span class="scenario-room">Staircase</span>
+            <h4 class="scenario-title">Elegant Transitions</h4>
+            <a href="#catalogue" class="scenario-cta">इस Look के Tiles देखें</a>
+          </div>
+        </div>
+        <div class="scenario-card fade-up">
+          <img src="images/space_commercial.jpg" alt="Commercial Lobby" class="scenario-img" loading="lazy">
+          <div class="scenario-overlay">
+            <span class="scenario-room">Commercial</span>
+            <h4 class="scenario-title">Grand Receptions</h4>
+            <a href="#catalogue" class="scenario-cta">इस Look के Tiles देखें</a>
+          </div>
+        </div>
+        <div class="scenario-card fade-up">
+          <img src="images/space_bedroom.jpg" alt="Modern Bedroom" class="scenario-img" loading="lazy">
+          <div class="scenario-overlay">
+            <span class="scenario-room">Bedroom</span>
+            <h4 class="scenario-title">Warm & Inviting</h4>
+            <a href="#catalogue" class="scenario-cta">इस Look के Tiles देखें</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Catalogue -->
+  <section id="catalogue">
+    <div class="container-wide">
+      <div class="catalogue-top fade-up">
+        <div>
+          <div class="section-label">Catalogue</div>
+          <h2 class="section-heading-hindi">पूरा Collection देखें</h2>
+        </div>
+        <div class="search-wrap">
+          <input type="text" id="searchInput" placeholder="Search by name, color, finish...">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <div class="search-dropdown" id="searchDropdown"></div>
+        </div>
+      </div>
+
+      <div class="catalogue-controls-top fade-up">
+        <button class="mobile-filter-btn" onclick="toggleFilters()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+          Filter
+        </button>
+        <div class="results-count">Showing <strong id="resultsCount">0</strong> products</div>
+        <select class="sort-select" id="sortSelect">
+          <option value="newest">Newest First</option>
+          <option value="name_asc">Name (A-Z)</option>
+          <option value="name_desc">Name (Z-A)</option>
+        </select>
+      </div>
+
+      <div class="catalogue-layout fade-up">
+        <!-- Filters Desktop -->
+        <aside class="filters-sidebar">
+          <div class="filter-group">
+            <h5 class="filter-title">Category</h5>
+            <div class="filter-chips" id="filter-category">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+          <div class="filter-group">
+            <h5 class="filter-title">Room</h5>
+            <div class="filter-chips" id="filter-room">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+          <div class="filter-group">
+            <h5 class="filter-title">Finish</h5>
+            <div class="filter-chips" id="filter-finish">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+          <div class="filter-group">
+            <h5 class="filter-title">Color</h5>
+            <div class="colour-chips" id="filter-color">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+          <div class="clear-filters" onclick="clearFilters()" id="clearFiltersBtn" style="display: none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            Clear Filters
+          </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-img-stack fade-up">
+          <img src="images/space_bathroom.jpg" alt="Showroom Quality" class="why-main-img" loading="lazy">
+          <img src="images/tile_marble.jpg" alt="Detail" class="why-accent-img" loading="lazy">
+        </div>
+        <div class="why-text fade-up fade-up-delay-2">
+          <div class="section-label">Why Choose Us</div>
+          <h2 class="section-heading">Curated Designs for Modern Homes.</h2>
+          
+          <div class="why-points">
+            <div class="why-point">
+              <div class="why-point-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+              <div class="why-point-text">
+                <h4 class="why-point-title">Curated Designs</h4>
+                <p class="why-point-sub">Handpicked collections ensuring you only see the finest patterns and finishes.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+              <div class="why-point-text">
+                <h4 class="why-point-title">Multiple Styles</h4>
+                <p class="why-point-sub">From modern minimalist to classic luxury, find tiles that match your vision.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+              <div class="why-point-text">
+                <h4 class="why-point-title">Visual Product Presentation</h4>
+                <p class="why-point-sub">See how tiles will actually look in rooms, not just on a rack.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide -->
+  <section id="guide">
+    <div class="container">
+      <div class="section-header centered fade-up">
+        <div class="section-label">Education</div>
+        <h2 class="section-heading-hindi">Tile चुनते समय किन बातों का ध्यान रखें?</h2>
+      </div>
+
+      <div class="guide-grid fade-up">
+        <div class="guide-card">
+          <div class="guide-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></div>
+          <h4 class="guide-title">Space</h4>
+          <p class="guide-text">जिस जगह पर tile लगनी है, उसके अनुसार selection बदलता है. Outdoor के लिए anti-skid ज़रूरी है.</p>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+          <h4 class="guide-title">Colour</h4>
+          <p class="guide-text">Light और dark shades room के feel को अलग तरह से बदलते हैं. Light colours room को बड़ा दिखाते हैं.</p>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+          <h4 class="guide-title">Finish</h4>
+          <p class="guide-text">Glossy, matt और textured finishes का look और use अलग होता है. Glossy walls के लिए, matt floors के लिए.</p>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg></div>
+          <h4 class="guide-title">Size</h4>
+          <p class="guide-text">Tile का size पूरे space के visual proportion को affect कर सकता है. Large tiles seamless look देते हैं.</p>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="6.5"></line></svg></div>
+          <h4 class="guide-title">Style</h4>
+          <p class="guide-text">अपने furniture और overall interior के साथ tile का look match करें.</p>
+        </div>
+      </div>
+      <div class="text-center fade-up" style="text-align: center;">
+        <a href="#enquiry" class="btn btn-primary">हमारी Team से बात करें</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="final-cta">
+    <img src="images/hero.jpg" alt="Interior Background" class="final-cta-bg">
+    <div class="final-cta-overlay"></div>
+    <div class="final-cta-content fade-up">
+      <h2 class="section-heading-hindi">आपके Space के लिए कौन-सा Tile सही रहेगा?</h2>
+      <p class="section-sub" style="color: rgba(255,255,255,0.8);">Collection देखें, अपने पसंदीदा designs shortlist करें और हमारी team से बात करें.</p>
+      <div class="final-cta-actions">
+        <a href="#catalogue" class="btn btn-gold">Collection देखें</a>
+        <a href="#enquiry" class="btn btn-outline">WhatsApp करें</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            [SHOWROOM NAME]
+            <span>Premium Tiles & Marble</span>
+          </a>
+          <p class="footer-tagline">Premium Tiles & Marble का शानदार collection जहाँ design, quality और style एक साथ मिलते हैं.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Collections</h5>
+          <ul>
+            <li><a href="#" onclick="setFilter('category', 'Floor Tiles')">Floor Tiles</a></li>
+            <li><a href="#" onclick="setFilter('category', 'Wall Tiles')">Wall Tiles</a></li>
+            <li><a href="#" onclick="setFilter('material', 'Marble Look')">Marble Look</a></li>
+            <li><a href="#" onclick="setFilter('material', 'Wooden Look')">Wooden Look</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Spaces</h5>
+          <ul>
+            <li><a href="#" onclick="setFilter('room', 'Living Room')">Living Room</a></li>
+            <li><a href="#" onclick="setFilter('room', 'Bathroom')">Bathroom</a></li>
+            <li><a href="#" onclick="setFilter('room', 'Kitchen')">Kitchen</a></li>
+            <li><a href="#" onclick="setFilter('room', 'Outdoor')">Outdoor</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="#showroom">Showroom Address</a></li>
+            <li><a href="tel:+910000000000">Call Us</a></li>
+            <li><a href="#enquiry">WhatsApp Enquiry</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 [SHOWROOM NAME]. All rights reserved.</div>
+        <div class="footer-dev">Website developed by <a href="https://wa.me/918382801930" target="_blank">Prince Mishra (+91 8382801930)</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-inner container">
+      <a href="#enquiry" class="btn btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        WhatsApp
+      </a>
+      <a href="tel:+910000000000" class="btn btn-primary">Call Now</a>
+    </div>
+  </div>
+
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="productModal" onclick="closeProductModal(event)">
+    <div class="product-modal">
+      <button class="modal-close" onclick="closeModalBtn()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-gallery">
+        <img src="" alt="" id="modalImg" class="modal-main-img">
+      </div>
+      <div class="modal-details">
+        <div class="modal-collection" id="modalCollection"></div>
+        <h2 class="modal-name" id="modalName"></h2>
+        
+        <div class="modal-specs">
+          <div class="spec-item">
+            <div class="spec-label">Size</div>
+            <div class="spec-value" id="modalSize"></div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Finish</div>
+            <div class="spec-value" id="modalFinish"></div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Material</div>
+            <div class="spec-value" id="modalMaterial"></div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Colour</div>
+            <div class="spec-value" id="modalColor"></div>
+          </div>
+        </div>
+
+        <div class="modal-suitable-label">यह Tile कहाँ अच्छा लगेगा?</div>
+        <div class="suitable-chips" id="modalRooms"></div>
+
+        <div class="modal-benefits">
+          <div class="modal-benefits-title">इस Tile की खासियत</div>
+          <div id="modalBenefits"></div>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="modalShortlistBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            मेरी पसंद में डालें
+          </button>
+          <a href="#" class="btn btn-wa" id="modalWaBtn" target="_blank">WhatsApp Enquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Filter Drawer -->
+  <div class="drawer-overlay" id="filterDrawerOverlay" onclick="toggleFilters()"></div>
+  <div class="filter-drawer" id="filterDrawer">
+    <div class="drawer-handle"></div>
+    <div class="filter-group">
+      <h5 class="filter-title">Category</h5>
+      <div class="filter-chips" id="m-filter-category"></div>
+    </div>
+    <div class="filter-group">
+      <h5 class="filter-title">Room</h5>
+      <div class="filter-chips" id="m-filter-room"></div>
+    </div>
+    <div class="filter-group">
+      <h5 class="filter-title">Finish</h5>
+      <div class="filter-chips" id="m-filter-finish"></div>
+    </div>
+    <div class="filter-group">
+      <h5 class="filter-title">Color</h5>
+      <div class="colour-chips" id="m-filter-color"></div>
+    </div>
+    <div style="display: flex; gap: 12px; margin-top: 32px;">
+      <button class="btn btn-ghost" style="flex:1" onclick="clearFilters(); toggleFilters()">Clear</button>
+      <button class="btn btn-primary" style="flex:2" onclick="toggleFilters()">Apply Filters</button>
+    </div>
+  </div>
+
+  <!-- Shortlist Panel -->
+  <div id="shortlist-overlay" onclick="toggleShortlist()"></div>
+  <div id="shortlist-panel">
+    <div class="shortlist-header">
+      <h3 class="shortlist-title">मेरी पसंद</h3>
+      <button class="shortlist-close" onclick="toggleShortlist()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="shortlist-body" id="shortlistBody">
+      <!-- Rendered by JS -->
+    </div>
+    <div class="shortlist-footer" id="shortlistFooter" style="display: none;">
+      <a href="#" class="btn btn-wa" id="shortlistWaBtn" target="_blank">WhatsApp पर अपनी पसंद भेजें</a>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
